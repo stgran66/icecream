@@ -6,3 +6,17 @@
     background-position: bottom 0 left 117px, center;
   }
 }
+@keyframes animatedHeaderTablet {
+  0% {
+    background-position: bottom -336px left 322px, bottom 16px left -152px, bottom 0 right -190px,
+      center right -25px;
+  }
+  50% {
+    background-position: bottom 0 left 322px, bottom 16px left -152px, bottom 0 right -190px,
+      center right -25px;
+  }
+  100% {
+    background-position: bottom 0 left 322px, bottom 16px left 32px, bottom 0 right 32px,
+      center right -25px;
+  }
+}

@@ -212,6 +212,18 @@ body {
   }
 }
 
+@keyframes animatedHeaderTablet {
+  0% {
+    background-position: bottom -336px left 322px, bottom 16px left -152px, bottom 0 right -190px, center right -25px;
+  }
+  50% {
+    background-position: bottom 0 left 322px, bottom 16px left -152px, bottom 0 right -190px, center right -25px;
+  }
+  100% {
+    background-position: bottom 0 left 322px, bottom 16px left 32px, bottom 0 right 32px, center right -25px;
+  }
+}
+
 .btn {
   border: none;
   background-color: transparent;
@@ -290,9 +302,6 @@ body {
   background-image: url(../images/hero/mobile/icecream.png), radial-gradient(circle, #ffa5ba 0, #ffa5ba 173px, transparent 173px);
   background-size: 171px, contain;
   background-repeat: no-repeat;
-  background-position: bottom 0 left 117px, center;
-  animation-name: animatedIcecream;
-  animation-duration: 1500ms;
   padding-top: 194px;
   padding-bottom: 158px;
   overflow: hidden;
@@ -304,13 +313,27 @@ body {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero__container {
+    animation-name: animatedIcecream;
+    animation-duration: 1500ms;
+    background-position: bottom 0 left 117px, center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__container {
     padding-top: 102px;
-    padding-bottom: 81px;
+    padding-bottom: 56px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    animation-name: animatedHeaderTablet;
+    animation-duration: 1500ms;
+    background-image: url(../images/hero/tablet/icecream.png), url(../images/hero/tablet/milk.png), url(../images/hero/tablet/girl.png), radial-gradient(circle, #ffa5ba 0, #ffa5ba 173px, transparent 173px);
+    background-size: 143px, 152px, 190px, contain;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 322px, bottom 16px left 32px, bottom 0 right 32px, center right -25px;
   }
 }
 
@@ -362,6 +385,20 @@ body {
   color: #d41443;
 }
 
+@media screen and (min-width: 768px) {
+  .page-title {
+    max-width: 162px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.145;
+  }
+  .page-title--large {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 0.905;
+  }
+}
+
 .hero__places-list {
   display: none;
 }
@@ -373,8 +410,15 @@ body {
 }
 
 .hero-description {
+  display: none;
   width: 100%;
   margin-left: 152px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-description {
+    display: block;
+  }
 }
 
 .hero-description__text {
