@@ -1,0 +1,24 @@
+.page-header__container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  @include tablet {
+    justify-content: flex-start;
+    padding-top: 32px;
+  }
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+  }
+}
+.logo {
+  @include tablet {
+    flex-grow: 2;
+  }
+}

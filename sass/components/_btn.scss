@@ -1,0 +1,30 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+.buy-btn {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    background-color: $light-color;
+
+    @include font(16px, 700, 1.3125);
+    color: $brand-color;
+    &__icon {
+      margin-left: 12px;
+    }
+  }
+}
+.menu-btn {
+  @include tablet {
+    margin-right: 32px;
+  }
+}

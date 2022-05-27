@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icecream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo">
+          <img
+            srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x"
+            src="./images/header/logo.png"
+            alt="company logo"
+            width="199px"
+            height="50px"
+          />
+        </a>
+        <button type="button" class="menu-btn btn">
+          <svg width="20px" height="12px">
+            <use href="./images/icons.svg#icon-burger" class="menu-btn"></use>
+          </svg>
+        </button>
+        <button type="button" class="header__buy-btn buy-btn btn">
+          Buy now
+          <svg width="8px" height="16px" class="buy-btn__icon">
+            <use href="./images/icons.svg#icon-pointer"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero-wrapper">
+            <h1 class="page-title">
+              ice cream made with <span class="page-title--large">passion</span>
+            </h1>
+            <ul class="hero__nav">
+              <li class="hero__nav-item">
+                <a href="#products" class="link hero__link">Products</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#about" class="link hero__link hero__link--light"> How it's made</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="hero__places-list">
+            <li class="places-list__item"><span class="places-list__item--large">16</span>cafes</li>
+            <li class="places-list__item">
+              <span class="places-list__item--large">23</span>food trucks
+            </li>
+          </ul>
+          <div class="hero-description">
+            <p class="hero-description__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sequi quo cum sunt esse
+              excepturi quidem saepe suscipit minus impedit.
+            </p>
+            <button type="button" class="btn hero-description__btn">
+              <svg width="10px" height="10px">
+                <use href="./images/icons.svg#icon-arrow" class="icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

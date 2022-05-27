@@ -1,0 +1,441 @@
+/**
+ * Minified by jsDelivr using clean-css v4.2.3.
+ * Original file: /npm/modern-normalize@1.1.0/modern-normalize.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+/*# sourceMappingURL=/sm/b8ae781793ee4eb86edef3f2a2ac43a5575d063ed8cd287d7553f9f1b2776616.map */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #907e82;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 40px 32px 60px 32px;
+  }
+}
+
+@keyframes animatedIcecream {
+  from {
+    background-position: bottom -410px left 117px, center;
+  }
+  to {
+    background-position: bottom 0 left 117px, center;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.buy-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3125;
+    color: #d41443;
+  }
+  .buy-btn__icon {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    margin-right: 32px;
+  }
+}
+
+.page-header__container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    justify-content: flex-start;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .page-header__container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    flex-grow: 2;
+  }
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero__container {
+  background-color: #ffb8ca;
+  background-image: url(../images/hero/mobile/icecream.png), radial-gradient(circle, #ffa5ba 0, #ffa5ba 173px, transparent 173px);
+  background-size: 171px, contain;
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 117px, center;
+  animation-name: animatedIcecream;
+  animation-duration: 1500ms;
+  padding-top: 194px;
+  padding-bottom: 158px;
+  overflow: hidden;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(../images/hero/mobile/icecream@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 102px;
+    padding-bottom: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.hero-wrapper {
+  margin-bottom: 61px;
+  height: 100%;
+}
+
+.hero__link {
+  display: inline-block;
+  padding: 7px 14px;
+  background-color: #d41443;
+  border-radius: 12px;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.hero__link--light {
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+.hero__nav {
+  display: flex;
+}
+
+.hero__nav-item:first-child {
+  margin-right: 8px;
+}
+
+.page-title {
+  max-width: 218px;
+  margin-bottom: 20px;
+  font-family: 'Titan One';
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.1538;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-title--large {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.965;
+  color: #d41443;
+}
+
+.hero__places-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__places-list {
+    display: block;
+  }
+}
+
+.hero-description {
+  width: 100%;
+  margin-left: 152px;
+}
+
+.hero-description__text {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 114px;
+  margin-bottom: 7px;
+}
+
+.hero-description__btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-arrow {
+  fill: #d41443;
+}
+
+.places-list__item {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  position: relative;
+  color: #ffffff;
+  text-align: right;
+}
+
+.places-list__item:first-child {
+  margin-bottom: 17px;
+}
+
+.places-list__item::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  z-index: 5;
+}
+
+.places-list__item--large {
+  display: block;
+  font-family: 'Titan One';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.1429;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  position: relative;
+  z-index: 10;
+}
+/*# sourceMappingURL=main.css.map */

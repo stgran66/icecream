@@ -1,0 +1,133 @@
+.hero {
+  &__container {
+    background-color: $hero-bgcolor;
+    background-image: url(../images/hero/mobile/icecream.png),
+      radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/mobile/icecream@2x.png);
+    }
+    background-size: 171px, contain;
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 117px, center;
+    animation-name: animatedIcecream;
+    animation-duration: 1500ms;
+    padding-top: 194px;
+    padding-bottom: 158px;
+    overflow: hidden;
+    @include tablet {
+      padding-top: 102px;
+      padding-bottom: 81px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  overflow: hidden;
+  &-wrapper {
+    margin-bottom: 61px;
+    height: 100%;
+  }
+  &__link {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: $brand-color;
+    border-radius: 12px;
+    @include font(8px, 400, 1.25);
+    color: $light-color;
+
+    &--light {
+      background-color: $light-color;
+      color: $brand-color;
+    }
+  }
+  &__nav {
+    display: flex;
+    &-item {
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.page-title {
+  max-width: 218px;
+  margin-bottom: 20px;
+
+  font-family: 'Titan One';
+  @include font(26px, 400, 1.1538);
+  @include let-spc;
+  text-transform: uppercase;
+
+  color: $light-color;
+  &--large {
+    @include font(48px, 400, 0.965);
+    color: $brand-color;
+  }
+}
+.hero__places-list {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+.hero-description {
+  width: 100%;
+  margin-left: 152px;
+  &__text {
+    @include font(8px, 400, 1.5);
+
+    color: $light-color;
+    max-width: 114px;
+    margin-bottom: 7px;
+  }
+  &__btn {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $light-color;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.icon-arrow {
+  fill: $brand-color;
+}
+.places-list__item {
+  @include font(8px, 400, 1.25);
+  position: relative;
+
+  color: $light-color;
+  text-align: right;
+  &:first-child {
+    margin-bottom: 17px;
+  }
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $light-color;
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    z-index: 5;
+  }
+
+  &--large {
+    display: block;
+    font-family: 'Titan One';
+    @include font(28px, 400, 1.1429);
+
+    @include let-spc;
+    text-transform: uppercase;
+
+    color: $brand-color;
+    position: relative;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,50 @@
+body {
+  background-color: $section-second-bgcolor;
+  color: $second-text-color;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+
+// .section {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
+.container {
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 480px;
+  @include tablet {
+    width: 768px;
+    padding: 40px 32px 60px 32px;
+  }
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+  //   @media screen and (min-width: 768px) {
+  //     width: 768px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     width: 1200px;
+  //   }
+}
+
+// .section__heading {
+//   margin-bottom: 30px;
+
+//   @include font(28px, 700, 1.18);
+//   text-align: center;
+
+//   color: $header-text-color;
+
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//     @include font(36px, 700, 1.17);
+//   }
+// }
+// .no-scroll {
+//   overflow: hidden;
+// }
