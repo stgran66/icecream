@@ -1,24 +1,26 @@
 .hero {
   &__container {
     background-color: $hero-bgcolor;
-    background-image: url(../images/hero/mobile/icecream.png),
-      radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/mobile/icecream@2x.png);
-    }
-    background-size: 171px, contain;
-    background-repeat: no-repeat;
 
-    padding-top: 194px;
-    padding-bottom: 158px;
     overflow: hidden;
     @include mobile-only {
       animation-name: animatedIcecream;
       animation-duration: 1500ms;
       background-position: bottom 0 left 117px, center;
+      background-image: url(../images/hero/mobile/icecream.png),
+        radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/mobile/icecream@2x.png),
+          radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
+      }
+      background-size: 171px, contain;
+      background-repeat: no-repeat;
+
+      padding-top: 194px;
+      padding-bottom: 158px;
     }
     @include tablet {
       padding-top: 102px;
@@ -26,17 +28,50 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
-      animation-name: animatedHeaderTablet;
-      animation-duration: 1500ms;
-
+      @media screen and (max-width: 1279.98px) {
+        animation-name: animatedHeroTablet;
+        animation-duration: 1500ms;
+      }
       background-image: url(../images/hero/tablet/icecream.png), url(../images/hero/tablet/milk.png),
         url(../images/hero/tablet/girl.png),
         radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
-      background-size: 143px, 152px, 190px, contain;
+      background-size: 143px, 152px, 190px, cover;
       background-repeat: no-repeat;
       background-position: bottom 0 left 322px, bottom 16px left 32px, bottom 0 right 32px,
-        center right -25px;
+        center left 31.5px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/tablet/icecream@2x.png),
+          url(../images/hero/tablet/milk@2x.png), url(../images/hero/tablet/girl@2x.png),
+          radial-gradient(circle, $pre-title-color 0, $pre-title-color 173px, transparent 173px);
+      }
+    }
+    @include desktop {
+      padding-right: 34px;
+      padding-top: 147px;
+      padding-bottom: 84px;
+
+      animation-name: animatedHeroDesktop;
+      animation-duration: 1500ms;
+
+      background-image: url(../images/hero/desktop/icecream.png),
+        url(../images/hero/desktop/milk.png), url(../images/hero/desktop/girl.png),
+        radial-gradient(circle, $pre-title-color 0, $pre-title-color 267px, transparent 267px);
+      background-size: 236px, 213px, 304px, cover;
+      background-repeat: no-repeat;
+      background-position: bottom 0 left 636px, bottom 60px left 16px, bottom 0 right 16px,
+        144px -22px;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero/desktop/icecream@2x.png),
+          url(../images/hero/desktop/milk@2x.png), url(../images/hero/desktop/girl@2x.png),
+          radial-gradient(circle, $pre-title-color 0, $pre-title-color 267px, transparent 267px);
+      }
     }
   }
 
@@ -44,6 +79,9 @@
   &-wrapper {
     margin-bottom: 61px;
     height: 100%;
+    @include desktop {
+      margin-bottom: 108px;
+    }
   }
   &__link {
     display: inline-block;
@@ -57,12 +95,20 @@
       background-color: $light-color;
       color: $brand-color;
     }
+    @include desktop {
+      @include font(14px, 400, 1.302);
+      padding: 11px 23.15px;
+      border-radius: 20px;
+    }
   }
   &__nav {
     display: flex;
     &-item {
       &:first-child {
         margin-right: 8px;
+        @include desktop {
+          margin-right: 12px;
+        }
       }
     }
   }
@@ -88,6 +134,14 @@
       @include font(34px, 400, 0.905);
     }
   }
+  @include desktop {
+    margin-bottom: 19px;
+    max-width: 277px;
+    @include font(38px, 400, 1.145);
+    &--large {
+      @include font(58px, 400, 0.905);
+    }
+  }
 }
 .hero__places-list {
   display: none;
@@ -102,12 +156,20 @@
   @include tablet {
     display: block;
   }
+  @include desktop {
+    margin-left: 229px;
+  }
   &__text {
     @include font(8px, 400, 1.5);
 
     color: $light-color;
     max-width: 114px;
     margin-bottom: 7px;
+    @include desktop {
+      max-width: 200px;
+      @include font(14px, 400, 1.4);
+      margin-bottom: 20px;
+    }
   }
   &__btn {
     width: 18px;
@@ -117,6 +179,14 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    @include desktop {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__svg {
+    width: 18px;
+    height: 18px;
   }
 }
 .icon-arrow {
@@ -128,6 +198,10 @@
 
   color: $light-color;
   text-align: right;
+
+  @include desktop {
+    @include font(14px, 400, 1.302);
+  }
   &:first-child {
     margin-bottom: 17px;
   }
@@ -142,6 +216,12 @@
     top: -2px;
     right: -6px;
     z-index: 5;
+    @include desktop {
+      width: 30px;
+      height: 30px;
+      top: -4px;
+      right: -12px;
+    }
   }
 
   &--large {
@@ -155,5 +235,8 @@
     color: $brand-color;
     position: relative;
     z-index: 10;
+    @include desktop {
+      @include font(46px, 400, 1.145);
+    }
   }
 }

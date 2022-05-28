@@ -27,4 +27,7 @@
   @include tablet {
     margin-right: 32px;
   }
+  @include desktop {
+    display: none;
+  }
 }

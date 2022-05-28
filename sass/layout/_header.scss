@@ -16,9 +16,38 @@
   @media screen and (max-width: 479.98px) {
     width: 100%;
   }
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 .logo {
   @include tablet {
     flex-grow: 2;
+  }
+  @include desktop {
+    flex-grow: 0;
+  }
+}
+.site-nav {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+  &__list {
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  &__link {
+    padding: 15px 0;
+
+    @include font(16px, 700, 1.3125);
+
+    color: $light-color;
   }
 }

@@ -6,17 +6,31 @@
     background-position: bottom 0 left 117px, center;
   }
 }
-@keyframes animatedHeaderTablet {
+@keyframes animatedHeroTablet {
   0% {
     background-position: bottom -336px left 322px, bottom 16px left -152px, bottom 0 right -190px,
-      center right -25px;
+      center left 31.5px;
   }
   50% {
     background-position: bottom 0 left 322px, bottom 16px left -152px, bottom 0 right -190px,
-      center right -25px;
+      center left 31.5px;
   }
   100% {
     background-position: bottom 0 left 322px, bottom 16px left 32px, bottom 0 right 32px,
-      center right -25px;
+      center left 31.5px;
+  }
+}
+@keyframes animatedHeroDesktop {
+  0% {
+    background-position: bottom -557px left 636px, bottom 60px left -216px, bottom 0 right -304px,
+      144px -22px;
+  }
+  50% {
+    background-position: bottom 0 left 636px, bottom 60px left -216px, bottom 0 right -304px,
+      144px -22px;
+  }
+  100% {
+    background-position: bottom 0 left 636px, bottom 60px left 16px, bottom 0 right 16px,
+      144px -22px;
   }
 }
