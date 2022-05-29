@@ -1,7 +1,6 @@
 .hero {
+  background-color: $hero-bgcolor;
   &__container {
-    background-color: $hero-bgcolor;
-
     overflow: hidden;
     @include mobile-only {
       animation-name: animatedIcecream;
