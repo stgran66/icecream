@@ -1,0 +1,116 @@
+.products {
+  background-color: $light-color;
+}
+.products-title {
+  margin-bottom: 148px;
+  @include tablet {
+    margin-bottom: 154px;
+  }
+  @include desktop {
+    margin-bottom: 258px;
+  }
+}
+.products-list {
+  @include tablet {
+    display: flex;
+    margin: -8px;
+  }
+  @include desktop {
+    margin: -16px;
+  }
+}
+
+.product-card {
+  padding: 160px 39px 40px 41px;
+  position: relative;
+  background-color: $hero-bgcolor;
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    @include mobile-only {
+      margin-bottom: 140px;
+    }
+  }
+
+  @include tablet {
+    padding: 118px 32px 40px 32px;
+    flex-basis: calc((100% - 32px) / 3);
+    margin: 8px;
+  }
+  @include desktop {
+    padding: 165px 75px 60px 75px;
+    flex-basis: calc((100% - 64px) / 3);
+    margin: 16px;
+  }
+
+  &--brown {
+    background-color: #f0d1a5;
+  }
+  &--green {
+    background-color: #c2e297;
+  }
+
+  &__picture {
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    transform: translate(-50%);
+    @include desktop {
+      top: -50%;
+    }
+  }
+  &__title {
+    font-family: 'Titan One';
+    @include font(20px, 400, 1.15);
+    @include let-spc;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $light-color;
+
+    margin-bottom: 32px;
+
+    @include desktop {
+      @include font(30px, 400, 1.133);
+    }
+
+    &:after {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+      content: '';
+      width: 26px;
+      height: 6px;
+      background-image: url('../../images/products/dots.svg');
+    }
+  }
+  &__descr {
+    margin-bottom: 32px;
+    @include font(14px, 700, 1.52);
+    @include let-spc;
+
+    text-align: center;
+
+    color: $light-color;
+  }
+  &__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    background-color: $light-color;
+    border-radius: 50%;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-btn__icon {
+    border-radius: 50%;
+    fill: $brand-color;
+  }
+}

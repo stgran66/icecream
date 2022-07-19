@@ -193,7 +193,13 @@ body {
 .container {
   margin: 0 auto;
   padding: 40px 20px;
-  width: 480px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -208,6 +214,70 @@ body {
     width: 1280px;
     padding: 60px 16px;
   }
+}
+
+.section-title {
+  font-family: 'Titan One';
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.147;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+}
+
+.pre-title {
+  font-family: 'Titan One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.167;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .pre-title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.154;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pre-title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
 }
 
 @keyframes animatedIcecream {
@@ -667,5 +737,149 @@ body {
     font-weight: 400;
     line-height: 1.145;
   }
+}
+
+.products {
+  background-color: #ffffff;
+}
+
+.products-title {
+  margin-bottom: 148px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-title {
+    margin-bottom: 154px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-title {
+    margin-bottom: 258px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products-list {
+    display: flex;
+    margin: -8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list {
+    margin: -16px;
+  }
+}
+
+.product-card {
+  padding: 160px 39px 40px 41px;
+  position: relative;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .product-card:not(:last-child) {
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-card {
+    padding: 118px 32px 40px 32px;
+    flex-basis: calc((100% - 32px) / 3);
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .product-card {
+    padding: 165px 75px 60px 75px;
+    flex-basis: calc((100% - 64px) / 3);
+    margin: 16px;
+  }
+}
+
+.product-card--brown {
+  background-color: #f0d1a5;
+}
+
+.product-card--green {
+  background-color: #c2e297;
+}
+
+.product-card__picture {
+  position: absolute;
+  top: -28%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 1280px) {
+  .product-card__picture {
+    top: -50%;
+  }
+}
+
+.product-card__title {
+  font-family: 'Titan One';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1280px) {
+  .product-card__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.133;
+  }
+}
+
+.product-card__title:after {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  content: '';
+  width: 26px;
+  height: 6px;
+  background-image: url("../../images/products/dots.svg");
+}
+
+.product-card__descr {
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.product-card__btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-btn__icon {
+  border-radius: 50%;
+  fill: #d41443;
 }
 /*# sourceMappingURL=main.css.map */

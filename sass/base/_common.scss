@@ -5,18 +5,13 @@ body {
   font-size: 12px;
 }
 
-// .section {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   @media screen and (min-width: 1200px) {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
-// }
 .container {
   margin: 0 auto;
   padding: 40px 20px;
-  width: 480px;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   @include tablet {
     width: 768px;
     padding: 40px 32px 60px 32px;
@@ -27,19 +22,43 @@ body {
   }
 }
 
-// .section__heading {
-//   margin-bottom: 30px;
+.section-title {
+  font-family: 'Titan One';
+  text-transform: uppercase;
+  @include font(34px, 400, 1.147);
+  text-align: center;
+  @include let-spc;
 
-//   @include font(28px, 700, 1.18);
-//   text-align: center;
+  color: $brand-color;
 
-//   color: $header-text-color;
+  @include tablet {
+    @include font(48px, 400, 1.147);
+  }
+  @include desktop {
+    @include font(58px, 400, 1.138);
+    @include let-spc(0.06em);
+  }
+}
+.pre-title {
+  font-family: 'Titan One';
+  @include font(18px, 400, 1.167) font-weight: 400;
 
-//   @media screen and (min-width: 1200px) {
-//     margin-bottom: 50px;
-//     @include font(36px, 700, 1.17);
-//   }
-// }
-// .no-scroll {
-//   overflow: hidden;
-// }
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $pre-title-color;
+
+  @include tablet {
+    @include font(26px, 400, 1.154);
+  }
+  @include desktop {
+    @include font(30px, 400, 1.133);
+    @include let-spc;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}

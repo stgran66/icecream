@@ -82,23 +82,131 @@
           </div>
         </div>
       </section>
-      <!-- <section class="products">
-        <p class="pre-title">100% natural</p>
-        <h2 class="section-title">products</h2>
-        <ul class="products-list">
-          <li class="products-list__item">
-            <img
-              srcset="
-                ./images/products/mobile/icecream.png    1x,
-                ./images/products/mobile/icecream@2x.png 2x
-              "
-              src="./images/products/mobile/icecream.png"
-              alt="strawberry icecream"
-            />
-          </li>
-          <li class="products-list__item"></li>
-          <li class="products-list__item"></li>
-        </ul>
+      <section class="products section">
+        <div class="container">
+          <p class="pre-title">100% natural</p>
+          <h2 class="section-title products-title">products</h2>
+          <ul class="products-list">
+            <li class="products-list__item product-card">
+              <picture class="product-card__picture">
+                <source
+                  srcset="
+                    ./images/products/desktop/icecream.png    1x,
+                    ./images/products/desktop/icecream@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/tablet/icecream.png    1x,
+                    ./images/products/tablet/icecream@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/mobile/icecream.png    1x,
+                    ./images/products/mobile/icecream@2x.png 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/apng"
+                />
+                <img src="./images/products/mobile/icecream.png" alt="strawberry icecream" />
+              </picture>
+              <h3 class="product-card__title">ice cream</h3>
+              <p class="product-card__descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ea perspiciatis
+                doloremque reprehenderit unde laudantium similique, fugiat deleniti praesentium
+                quos?
+              </p>
+              <button type="button" class="product-card__btn">
+                <svg class="product-card-btn__icon" height="25px" width="25px">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="products-list__item product-card product-card--brown">
+              <picture class="product-card__picture">
+                <source
+                  srcset="
+                    ./images/products/desktop/icecofee.png    1x,
+                    ./images/products/desktop/icecofee@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/tablet/icecofee.png    1x,
+                    ./images/products/tablet/icecofee@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/mobile/icecofee.png    1x,
+                    ./images/products/mobile/icecofee@2x.png 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/apng"
+                />
+                <img src="./images/products/mobile/icecofee.png" alt="strawberry icecream" />
+              </picture>
+              <h3 class="product-card__title">ice cream</h3>
+              <p class="product-card__descr">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda inventore
+                repellat expedita ab ad, impedit unde laboriosam ut illum nobis?
+              </p>
+              <button type="button" class="product-card__btn">
+                <svg class="product-card-btn__icon" height="25px" width="25px">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="products-list__item product-card product-card--green">
+              <picture class="product-card__picture">
+                <source
+                  srcset="
+                    ./images/products/desktop/milkshake.png    1x,
+                    ./images/products/desktop/milkshake@2x.png 2x
+                  "
+                  media="(min-width:1280px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/tablet/milkshake.png    1x,
+                    ./images/products/tablet/milkshake@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/apng"
+                />
+                <source
+                  srcset="
+                    ./images/products/mobile/milkshake.png    1x,
+                    ./images/products/mobile/milkshake@2x.png 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/apng"
+                />
+                <img src="./images/products/mobile/milkshake.png" alt="strawberry icecream" />
+              </picture>
+              <h3 class="product-card__title">ice cream</h3>
+              <p class="product-card__descr">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda inventore
+                repellat expedita ab ad, impedit unde laboriosam ut illum nobis?
+              </p>
+              <button type="button" class="product-card__btn">
+                <svg class="product-card-btn__icon" height="25px" width="25px">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <div class="container">
@@ -115,7 +223,7 @@
             commodi quia ab.
           </p>
         </div>
-      </section> -->
+      </section>
     </main>
   </body>
 </html>
