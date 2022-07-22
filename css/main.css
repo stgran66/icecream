@@ -1167,6 +1167,12 @@ button {
   background-image: linear-gradient(#fff5f6 40%, #ffffff 40%);
 }
 
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    padding-bottom: 40px;
+  }
+}
+
 .gallery-list {
   display: grid;
   grid-template-rows: repeat(8, 25px);
@@ -1347,6 +1353,29 @@ button {
   text-align: center;
   background-image: linear-gradient(transparent 30.5px, #e1e1e1 30.5px, #e1e1e1 31.5px, transparent 31.5px, transparent 61.5px, #e1e1e1 61.5px, #e1e1e1 62.5px, transparent 62.5px, transparent 92.5px, #e1e1e1 92.5px, #e1e1e1 93.5px, transparent 93.5px, transparent 123.5px, #e1e1e1 123.5px, #e1e1e1 124.5px, transparent 124.5px, transparent 154.5px, #e1e1e1 154.5px, #e1e1e1 155.5px, transparent 155.5px, transparent 185.5px, #e1e1e1 185.5px, #e1e1e1 186.5px, transparent 186.5px);
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .review__text {
+    width: 620px;
+    min-height: 63px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    background-image: linear-gradient(transparent 30.5px, #e1e1e1 30.5px, #e1e1e1 31.5px, transparent 31.5px, transparent 61.5px, #e1e1e1 61.5px, #e1e1e1 62.5px, transparent 62.5px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .review__text {
+    width: 750px;
+    min-height: 63px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+    background-image: linear-gradient(transparent 30.5px, #e1e1e1 30.5px, #e1e1e1 31.5px, transparent 31.5px, transparent 61.5px, #e1e1e1 61.5px, #e1e1e1 62.5px, transparent 62.5px);
+  }
 }
 
 .review__icon {

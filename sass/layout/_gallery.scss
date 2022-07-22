@@ -1,5 +1,11 @@
 .gallery {
   background-image: linear-gradient($section-first-bgcolor 40%, $light-color 40%);
+
+  &__container {
+    @include tablet {
+      padding-bottom: 40px;
+    }
+  }
 }
 .gallery-list {
   display: grid;
