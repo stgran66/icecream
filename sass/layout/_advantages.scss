@@ -1,0 +1,79 @@
+.advantages {
+  background-color: $section-first-bgcolor;
+
+  &-container {
+    @include mobile-only {
+      padding-top: 0;
+    }
+  }
+  &-list {
+    @include tablet {
+      display: flex;
+    }
+  }
+  &-list__item {
+    @include mobile-only {
+      margin-bottom: 32px;
+    }
+    &:not(:last-child) {
+      @include tablet {
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+.advantage__text {
+  max-width: 230px;
+  @include font(12px, 700, 1.7);
+
+  color: $prime-text-color;
+
+  @include tablet {
+    max-width: 159px;
+    @include font(14px, 700, 1.74);
+  }
+
+  &--large {
+    display: inline-block;
+    margin-bottom: 13px;
+    font-family: 'Titan One';
+    @include font(36px, 400, 1.139);
+    @include let-spc;
+
+    color: $brand-color;
+
+    @include tablet {
+      @include font(48px, 400, 1.146);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/advantages/milk.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 16px;
+
+      @include tablet {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+.advantage {
+  &__apples-img {
+    &::before {
+      width: 50px;
+      background-image: url(../images/advantages/apples.png);
+    }
+  }
+  &__heart-img {
+    &::before {
+      width: 44px;
+      background-image: url(../images/advantages/heart.png);
+    }
+  }
+}

@@ -882,4 +882,302 @@ button {
   border-radius: 50%;
   fill: #d41443;
 }
+
+.about {
+  background-color: #fff5f6;
+}
+
+@media screen and (max-width: 767.98px) {
+  .about {
+    background-image: url(../images/about/mobile/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 68.5%;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2) {
+  .about {
+    background-image: url(../images/about/mobile/bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(../images/about/desktop/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 33%;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+  .about {
+    background-image: url(../images/about/desktop/bg@2x.png);
+  }
+}
+
+.about-content {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-content {
+    padding-right: 161px;
+    margin-top: 60px;
+  }
+}
+
+.about-description {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-description {
+    margin-top: 0;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-description {
+    margin-left: 139px;
+  }
+}
+
+.about-description__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-description__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.76;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-description__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    margin-top: 72px;
+  }
+}
+
+.about-description__text--light {
+  color: #907e82;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-description__text--light {
+    margin-bottom: 40px;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-description__text--light {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.94;
+  }
+}
+
+.about-description__btn {
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.286;
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+.about-description__btn:hover, .about-description__btn:focus {
+  background-color: #ecebeb;
+}
+
+.about-description__btn-icon {
+  width: 8px;
+  height: 16px;
+  margin-left: 20px;
+}
+
+.advantages {
+  background-color: #fff5f6;
+}
+
+@media screen and (max-width: 767.98px) {
+  .advantages-container {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .advantages-list__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+.advantage__text {
+  max-width: 230px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__text {
+    max-width: 159px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.74;
+  }
+}
+
+.advantage__text--large {
+  display: inline-block;
+  margin-bottom: 13px;
+  font-family: 'Titan One';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__text--large {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.146;
+  }
+}
+
+.advantage__text--large::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/advantages/milk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__text--large::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantage__apples-img::before {
+  width: 50px;
+  background-image: url(../images/advantages/apples.png);
+}
+
+.advantage__heart-img::before {
+  width: 44px;
+  background-image: url(../images/advantages/heart.png);
+}
+
+.gallery {
+  background-image: linear-gradient(#fff5f6 40%, #e5e5e5 40%);
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-rows: repeat(8, 25px);
+  grid-template-columns: repeat(15, 25px);
+  justify-content: center;
+  grid-gap: 2px;
+}
+
+.gallery-list img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-list .gallery-list__item:first-of-type {
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(2) {
+  grid-row: 3 / span 2;
+  grid-column: 3 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(3) {
+  grid-row: 5 / span 2;
+  grid-column: 3 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(4) {
+  grid-row: 1 / span 5;
+  grid-column: 5 / span 5;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(5) {
+  grid-row: 6 / span 3;
+  grid-column: 5 / span 3;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(6) {
+  grid-row: 3 / span 2;
+  grid-column: 10 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(7) {
+  grid-row: 5 / span 2;
+  grid-column: 10 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(8) {
+  grid-row: 2 / span 2;
+  grid-column: 12 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(9) {
+  grid-row: 4 / span 2;
+  grid-column: 12 / span 2;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(10) {
+  grid-row: 4 / span 2;
+  grid-column: 14 / span 2;
+}
 /*# sourceMappingURL=main.css.map */

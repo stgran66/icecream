@@ -208,20 +208,366 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="about section">
         <div class="container">
-          <p class="test">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, provident.
-            Laudantium praesentium quas fugit totam quidem placeat nisi, harum mollitia facilis
-            vitae voluptatem officia aut dolorem officiis voluptatum accusamus dicta commodi
-            repellendus eligendi. Repellat minus, officia ducimus ipsum reiciendis numquam odit
-            deleniti vero quam id. Pariatur exercitationem nesciunt at distinctio ipsam repudiandae
-            asperiores sapiente quis quo aliquam earum nam veritatis, ut quaerat aspernatur libero
-            nobis consequatur excepturi laudantium animi voluptates molestias totam odio error!
-            Voluptas consectetur ad, explicabo fuga ratione quis quam vel architecto non aut
-            reprehenderit, eveniet eligendi ducimus doloremque quo ex repellendus maiores ea iusto,
-            commodi quia ab.
-          </p>
+          <p class="pre-title">tradition and love</p>
+          <h2 class="section-title about-title">how it's made?</h2>
+          <div class="about-content">
+            <picture class="about-picture">
+              <source
+                srcset="./images/about/desktop/milk.png 1x, ./images/about/desktop/milk@2x.png 2x"
+                media="(min-width:1280px)"
+                type="image/apng"
+              />
+              <source
+                srcset="./images/about/tablet/milk.png 1x, ./images/about/tablet/milk@2x.png 2x"
+                media="(min-width:768px)"
+                type="image/apng"
+              />
+              <source
+                srcset="./images/about/mobile/milk.png 1x, ./images/about/mobile/milk@2x.png 2x"
+                media="(max-width:767.98px)"
+                type="image/apng"
+              />
+              <img src="./images/about/mobile/milk.png" alt="milk with cow" />
+            </picture>
+            <div class="about-description">
+              <p class="about-description__text">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+              </p>
+              <p class="about-description__text about-description__text--light">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula
+                volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.<br /><br />
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+              <button class="about-description__btn btn">
+                <p>Read more</p>
+                <svg class="about-description__btn-icon">
+                  <use href="./images/icons.svg#icon-pointer"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section advantages">
+        <div class="container advantages-container">
+          <h2 class="section-title visually-hidden">Our advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-list__item advantage">
+              <span class="advantage__text--large advantage__milk-img">721</span>
+              <p class="advantage__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantage">
+              <span class="advantage__text--large advantage__apples-img">16kg</span>
+              <p class="advantage__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advantages-list__item advantage">
+              <span class="advantage__text--large advantage__heart-img">84</span>
+              <p class="advantage__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Gallery</h2>
+          <ul class="gallery-list">
+            <li class="gallery-list__item first-picture">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-1-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-1-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-1-1x.webp 1x,
+                    ./images/gallery/gallery-1-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-1-1x.jpg 1x, ./images/gallery-1-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-1-1x.jpg" alt="icecream with strawberries" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-2-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-2-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-2-1x.webp 1x,
+                    ./images/gallery/gallery-2-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-2-1x.jpg 1x, ./images/gallery-2-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-2-1x.jpg" alt="mint icecream on wooden plate" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-3-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-3-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-3-1x.webp 1x,
+                    ./images/gallery/gallery-3-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-3-1x.jpg 1x, ./images/gallery-3-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-3-1x.jpg" alt="icecream in hand" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-4-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-4-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-4-1x.webp 1x,
+                    ./images/gallery/gallery-4-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-4-1x.jpg 1x, ./images/gallery-4-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-4-1x.jpg" alt="a lot of icecreams laying" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-5-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-5-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-5-1x.webp 1x,
+                    ./images/gallery/gallery-5-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-5-1x.jpg 1x, ./images/gallery-5-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-5-1x.jpg" alt="girl eating icecream" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-6-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-6-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-6-1x.webp 1x,
+                    ./images/gallery/gallery-6-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-6-1x.jpg 1x, ./images/gallery-6-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img
+                  src="./images/gallery/gallery-6-1x.jpg"
+                  alt="two hands holding icecreams ot each other"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-7-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-7-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-7-1x.webp 1x,
+                    ./images/gallery/gallery-7-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-7-1x.jpg 1x, ./images/gallery-7-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img
+                  src="./images/gallery/gallery-7-1x.jpg"
+                  alt="hand holding icecream at street"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-8-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-8-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-8-1x.webp 1x,
+                    ./images/gallery/gallery-8-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-8-1x.jpg 1x, ./images/gallery-8-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-8-1x.jpg" alt="dog licking icecream" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-9-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-9-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-9-1x.webp 1x,
+                    ./images/gallery/gallery-9-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-9-1x.jpg 1x, ./images/gallery-9-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-9-1x.jpg" alt="glass of milk with donut atop" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery-10-2x.webp"
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-10-2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-10-1x.webp 1x,
+                    ./images/gallery/gallery-10-2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/gallery/gallery-10-1x.jpg 1x, ./images/gallery-10-2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/gallery-10-1x.jpg" alt="little girl with icecream" />
+              </picture>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
