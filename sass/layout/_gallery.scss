@@ -30,7 +30,7 @@
     cursor: pointer;
     &:hover,
     &:focus {
-      transform: scale(2.5);
+      transform: scale(3);
     }
     transition: transform 250ms linear;
     &:first-of-type {
@@ -51,7 +51,7 @@
 
       &:hover,
       &:focus {
-        transform: scale(1.15);
+        transform: scale(1.5);
       }
     }
     &:nth-of-type(5) {
@@ -67,7 +67,7 @@
       grid-column: 10 / span 1;
       &:hover,
       &:focus {
-        transform: scale(4);
+        transform: scale(6);
       }
     }
     &:nth-of-type(7) {

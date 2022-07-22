@@ -1,0 +1,93 @@
+.reviews {
+  background-color: $light-color;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 16px;
+
+  &__portrait {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+  }
+
+  &__text-container {
+    position: relative;
+    padding: 43px 58px 26px 65px;
+    background-color: $reviews-bg-color;
+
+    &:before {
+      position: absolute;
+
+      content: '';
+      display: block;
+      width: 54px;
+      height: 40px;
+      background-image: url('../images/reviews/quotes.png');
+      background-size: contain;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/reviews/quotes@2x.png');
+      }
+    }
+  }
+
+  &__text {
+    z-index: 10;
+    position: relative;
+    width: 180px;
+    min-height: 190px;
+
+    @include font(12px, 500, 2.55);
+    text-align: center;
+
+    background-image: linear-gradient(
+      transparent 30.5px,
+      #e1e1e1 30.5px,
+      #e1e1e1 31.5px,
+      transparent 31.5px,
+      transparent 61.5px,
+      #e1e1e1 61.5px,
+      #e1e1e1 62.5px,
+      transparent 62.5px,
+      transparent 92.5px,
+      #e1e1e1 92.5px,
+      #e1e1e1 93.5px,
+      transparent 93.5px,
+      transparent 123.5px,
+      #e1e1e1 123.5px,
+      #e1e1e1 124.5px,
+      transparent 124.5px,
+      transparent 154.5px,
+      #e1e1e1 154.5px,
+      #e1e1e1 155.5px,
+      transparent 155.5px,
+      transparent 185.5px,
+      #e1e1e1 185.5px,
+      #e1e1e1 186.5px,
+      transparent 186.5px
+    );
+    color: $prime-text-color;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 4px;
+    margin-top: 16px;
+  }
+
+  &__name {
+    margin-top: 16px;
+
+    @include font(14px, 500, 1.86);
+
+    color: $prime-text-color;
+  }
+}
