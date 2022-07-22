@@ -1391,4 +1391,228 @@ button {
   line-height: 1.86;
   color: #000000;
 }
+
+.locations {
+  background-image: linear-gradient(#ffffff 24%, #fff5f6 24%);
+}
+
+@media screen and (min-width: 768px) {
+  .location-list {
+    display: flex;
+    margin: -16px;
+  }
+}
+
+.restaurant {
+  padding: 40px 32px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .restaurant:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant {
+    flex-basis: calc((100% - 64px) / 3);
+    margin: 16px;
+  }
+}
+
+.restaurant__label {
+  width: 80px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+
+.restaurant__label--foodtruck {
+  width: 130px;
+  background-color: #c2e297;
+}
+
+.restaurant__city {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__city {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant__city {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+
+.restaurant__description {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #907e82;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+  }
+}
+
+.restaurant__schedule {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  color: #000000;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__schedule {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant__schedule {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+}
+
+.restaurant__schedule--light {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffa5ba;
+}
+
+.restaurant__contacts {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__contacts {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.83;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurant__contacts {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.83;
+  }
+}
+
+.locations__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3125;
+  border-radius: 22px;
+  background-color: #d41443;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .locations__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.locations__btn--light {
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .locations__btn--light {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .locations__btn:first-of-type {
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+.locations-btn__icon {
+  margin-left: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .location__btn-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .location__btn-container {
+    margin-top: 60px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

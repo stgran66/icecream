@@ -1,0 +1,177 @@
+.locations {
+  background-image: linear-gradient($light-color 24%, $section-first-bgcolor 24%);
+}
+
+.location-list {
+  @include tablet {
+    display: flex;
+    margin: -16px;
+  }
+}
+.restaurant {
+  padding: 40px 32px;
+
+  background-color: $light-color;
+  border-radius: 24px;
+
+  &:not(:last-of-type) {
+    @include mobile-only {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 64px) / 3);
+    margin: 16px;
+  }
+
+  &__label {
+    width: 80px;
+    margin-bottom: 20px;
+
+    @include font(12px, 500, 1.86);
+    @include let-spc;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $light-color;
+    background-color: $cafe-label-color;
+    border-radius: 4px;
+
+    @include tablet {
+      @include font(16px, 500, 1.86);
+    }
+
+    &--foodtruck {
+      width: 130px;
+
+      background-color: $foodtrack-label-color;
+    }
+  }
+
+  &__city {
+    margin-bottom: 8px;
+
+    @include font(12px, 500, 1.86);
+    @include let-spc;
+
+    color: $prime-text-color;
+
+    @include tablet {
+      @include font(14px, 500, 1.86);
+    }
+
+    @include desktop {
+      @include font(16px, 500, 1.86);
+    }
+  }
+
+  &__description {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    @include font(12px, 500, 1.5);
+
+    color: $second-text-color;
+    border-bottom: 1px solid #e1e1e1;
+
+    @include tablet {
+      @include font(14px, 500, 1.66);
+    }
+
+    @include desktop {
+      @include font(16px, 500, 1.83);
+      @include let-spc;
+    }
+  }
+
+  &__schedule {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+
+    @include font(12px, 500, 1.86);
+
+    color: $prime-text-color;
+    border-bottom: 1px solid #e1e1e1;
+
+    @include tablet {
+      @include font(14px, 500, 1.86);
+    }
+
+    @include desktop {
+      @include font(16px, 500, 1.86);
+      @include let-spc;
+    }
+
+    &--light {
+      display: block;
+      margin-bottom: 8px;
+
+      color: $pre-title-color;
+    }
+  }
+
+  &__contacts {
+    @include font(12px, 500, 1.5);
+    color: $second-text-color;
+
+    @include tablet {
+      @include font(14px, 500, 1.83);
+    }
+
+    @include desktop {
+      @include font(16px, 500, 1.83);
+    }
+  }
+}
+.locations__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 44px;
+
+  @include font(16px, 700, 1.3125);
+
+  border-radius: 22px;
+  background-color: $brand-color;
+  color: $light-color;
+
+  @include tablet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &--light {
+    color: $brand-color;
+    background-color: $light-color;
+
+    @include tablet {
+      margin-left: 15px;
+    }
+  }
+
+  @include mobile-only {
+    &:first-of-type {
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.locations-btn__icon {
+  margin-left: 13px;
+}
+
+.location__btn-container {
+  @include tablet {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-top: 60px;
+  }
+}
