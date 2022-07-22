@@ -4,6 +4,10 @@
   padding: 0;
   display: flex;
   cursor: pointer;
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: $btn-hover-primary-color;
+  }
 }
 .buy-btn {
   display: none;

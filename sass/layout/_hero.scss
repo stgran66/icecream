@@ -184,8 +184,12 @@
     }
   }
   &__svg {
-    width: 18px;
-    height: 18px;
+    width: 11.25px;
+    height: 11.25px;
+    @include desktop {
+      width: 16.25px;
+      height: 16.25px;
+    }
   }
 }
 .icon-arrow {
@@ -237,5 +241,27 @@
     @include desktop {
       @include font(46px, 400, 1.145);
     }
+  }
+}
+.company-logo {
+  width: 50px;
+  height: 50px;
+  fill: $brand-color;
+  border-radius: 50%;
+  background-color: $light-color;
+  margin-right: 15px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Titan One';
+  @include font(38px, 400, 1.157);
+  @include let-spc;
+  text-transform: uppercase;
+
+  color: $brand-color;
+
+  @media screen and (max-width: 479.98px) {
+    @include font(8vw, 400, 1.157);
   }
 }

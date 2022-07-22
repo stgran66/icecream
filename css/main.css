@@ -319,6 +319,11 @@ button {
   padding: 0;
   display: flex;
   cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.btn:hover {
+  background-color: #ecebeb;
 }
 
 .buy-btn {
@@ -667,8 +672,15 @@ button {
 }
 
 .hero-description__svg {
-  width: 18px;
-  height: 18px;
+  width: 11.25px;
+  height: 11.25px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-description__svg {
+    width: 16.25px;
+    height: 16.25px;
+  }
 }
 
 .icon-arrow {
@@ -736,6 +748,35 @@ button {
     font-size: 46px;
     font-weight: 400;
     line-height: 1.145;
+  }
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  fill: #d41443;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Titan One';
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.157;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (max-width: 479.98px) {
+  .logo {
+    font-size: 8vw;
+    font-weight: 400;
+    line-height: 1.157;
   }
 }
 
@@ -1137,6 +1178,13 @@ button {
   .gallery-list {
     grid-template-rows: repeat(8, 70px);
     grid-template-columns: repeat(15, 70px);
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .gallery-list {
+    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(15, 5vw);
   }
 }
 
