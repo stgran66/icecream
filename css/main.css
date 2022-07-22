@@ -322,8 +322,12 @@ button {
   transition: background-color 250ms linear;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: #ecebeb;
+}
+
+.btn--dark:hover, .btn--dark:focus {
+  background-color: #c7133e;
 }
 
 .buy-btn {
@@ -347,6 +351,10 @@ button {
   .buy-btn__icon {
     margin-left: 12px;
   }
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -1190,7 +1198,16 @@ button {
 
 .gallery-list img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 20%;
+}
+
+.gallery-list .gallery-list__item {
+  cursor: pointer;
+  transition: transform 250ms linear;
+}
+
+.gallery-list .gallery-list__item:hover, .gallery-list .gallery-list__item:focus {
+  transform: scale(2.5);
 }
 
 .gallery-list .gallery-list__item:first-of-type {
@@ -1213,14 +1230,26 @@ button {
   grid-column: 5 / span 5;
 }
 
+.gallery-list .gallery-list__item:nth-of-type(4):hover, .gallery-list .gallery-list__item:nth-of-type(4):focus {
+  transform: scale(1.15);
+}
+
 .gallery-list .gallery-list__item:nth-of-type(5) {
   grid-row: 6 / span 3;
   grid-column: 5 / span 3;
 }
 
+.gallery-list .gallery-list__item:nth-of-type(5):hover, .gallery-list .gallery-list__item:nth-of-type(5):focus {
+  transform: scale(2);
+}
+
 .gallery-list .gallery-list__item:nth-of-type(6) {
   grid-row: 5 / span 1;
   grid-column: 10 / span 1;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(6):hover, .gallery-list .gallery-list__item:nth-of-type(6):focus {
+  transform: scale(4);
 }
 
 .gallery-list .gallery-list__item:nth-of-type(7) {
@@ -1248,6 +1277,10 @@ button {
   grid-column: 10 / span 3;
 }
 
+.gallery-list .gallery-list__item:nth-of-type(11):hover, .gallery-list .gallery-list__item:nth-of-type(11):focus {
+  transform: scale(2);
+}
+
 .gallery-list .gallery-list__item:nth-of-type(12) {
   grid-row: 6 / span 2;
   grid-column: 8 / span 2;
@@ -1256,5 +1289,9 @@ button {
 .gallery-list .gallery-list__item:nth-of-type(13) {
   grid-row: 7 / span 1;
   grid-column: 4 / span 1;
+}
+
+.gallery-list .gallery-list__item:nth-of-type(13):hover, .gallery-list .gallery-list__item:nth-of-type(13):focus {
+  transform: scale(4);
 }
 /*# sourceMappingURL=main.css.map */

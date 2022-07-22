@@ -5,8 +5,15 @@
   display: flex;
   cursor: pointer;
   transition: background-color 250ms linear;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $btn-hover-primary-color;
+  }
+  &--dark {
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-secondary-color;
+    }
   }
 }
 .buy-btn {
@@ -28,6 +35,10 @@
   }
 }
 .menu-btn {
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
   @include tablet {
     margin-right: 32px;
   }
