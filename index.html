@@ -29,11 +29,23 @@
         </button>
         <nav class="site-nav">
           <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="" class="site-nav__link">Home</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">About us</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">How it's made?</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Our products</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Contact</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link home-link active">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#products" class="site-nav__link">Our products</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#about" class="site-nav__link">How it's made?</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#advantages" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item"><a href="#gallery" class="site-nav__link">Gallery</a></li>
+            <li class="site-nav__item">
+              <a href="#reviews" class="site-nav__link">Reviews</a>
+            </li>
+            <li class="site-nav__item"><a href="#contacts" class="site-nav__link">Contact</a></li>
           </ul>
         </nav>
         <button type="button" class="header__buy-btn buy-btn btn">
@@ -60,19 +72,37 @@
         <nav class="popup-menu__site-nav">
           <ul class="popup-site-nav__list">
             <li class="popup-site-nav__item">
-              <a href="#hero" class="popup-site-nav__link site-nav__link">Home</a>
+              <a href="#hero" class="popup-site-nav__link site-nav__link home-link active">Home</a>
             </li>
             <li class="popup-site-nav__item">
-              <a href="#advantages" class="popup-site-nav__link site-nav__link">About us</a>
+              <a href="#products" class="popup-site-nav__link site-nav__link products-link"
+                >Our products</a
+              >
             </li>
             <li class="popup-site-nav__item">
-              <a href="#about" class="popup-site-nav__link site-nav__link">How it's made?</a>
+              <a href="#about" class="popup-site-nav__link site-nav__link about-link"
+                >How it's made?</a
+              >
             </li>
             <li class="popup-site-nav__item">
-              <a href="#products" class="popup-site-nav__link site-nav__link">Our products</a>
+              <a href="#advantages" class="popup-site-nav__link site-nav__link advantages-link"
+                >About us</a
+              >
             </li>
             <li class="popup-site-nav__item">
-              <a href="#contacts" class="popup-site-nav__link site-nav__link">Contact</a>
+              <a href="#gallery" class="popup-site-nav__link site-nav__link gallery-link"
+                >Gallery</a
+              >
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#reviews" class="popup-site-nav__link site-nav__link reviews-link"
+                >Client's reviews</a
+              >
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#contacts" class="popup-site-nav__link site-nav__link contacts-link"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -327,7 +357,7 @@
           </ul>
         </div>
       </section>
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
         <div class="container gallery__container">
           <h2 class="section-title visually-hidden">Gallery</h2>
           <ul class="gallery-list">
@@ -763,7 +793,7 @@
           </ul>
         </div>
       </section>
-      <section class="section reviews">
+      <section class="section reviews" id="reviews">
         <div class="container swiper mySwiper">
           <ul class="reviews-list swiper-wrapper">
             <li class="reviews-list__item review swiper-slide">
@@ -949,7 +979,13 @@
         <p class="footer__copyright">&copy; 2019 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/active-link.js" type="module"></script>
     <script src="./js/swiper.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/lazy-loading.js" type="module"></script>

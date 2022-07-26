@@ -522,6 +522,11 @@ button {
   font-weight: 700;
   line-height: 1.3125;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link.active {
+  color: #d41443;
 }
 
 .hero {
