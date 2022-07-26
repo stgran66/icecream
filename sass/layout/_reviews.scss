@@ -128,3 +128,20 @@
     color: $prime-text-color;
   }
 }
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-disabled {
+  color: $brand-color;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  border-radius: 0;
+  background-image: url('../images/reviews/swiper-icon.svg');
+  background-color: transparent;
+
+  background-size: contain;
+}

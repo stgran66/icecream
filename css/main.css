@@ -1475,6 +1475,24 @@ button {
   color: #000000;
 }
 
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-disabled {
+  color: #d41443;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 0;
+  background-image: url("../images/reviews/swiper-icon.svg");
+  background-color: transparent;
+  background-size: contain;
+}
+
 .locations {
   background-image: linear-gradient(#ffffff 24%, #fff5f6 24%);
 }
