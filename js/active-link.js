@@ -4,7 +4,7 @@ const refs = {
   navLinkEl: document.querySelectorAll('.site-nav__link'),
 };
 
-document.addEventListener('scroll', _.throttle(onScroll, 100));
+document.addEventListener('scroll', _.throttle(onScroll, 20));
 
 function onScroll() {
   let current;
