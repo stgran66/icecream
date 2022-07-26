@@ -1,17 +1,41 @@
 .page-footer {
   background-color: $section-first-bgcolor;
 }
+
 .footer-container {
+  padding: 8px 0 20px 0;
   padding-top: 8px;
   padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 .footer__slogan {
   max-width: 232px;
+  margin-left: 32px;
+
   font-family: 'Titan One';
   @include font(18px, 400, 1.167);
   text-transform: uppercase;
 
   color: $pre-title-color;
+
+  @include tablet {
+    margin-right: auto;
+
+    @include font(26px, 400, 1.154);
+    @include let-spc;
+  }
+
+  @include desktop {
+    max-width: max-content;
+    @include font(30px, 400, 1.133);
+  }
 
   &--dark {
     display: block;
@@ -21,31 +45,71 @@
     @include let-spc;
 
     color: $brand-color;
+
+    @include tablet {
+      margin-top: 12px;
+
+      @include font(48px, 400, 1.146);
+      @include let-spc;
+    }
+
+    @include desktop {
+      @include font(58px, 400, 1.138);
+    }
   }
 }
 
 .social-list {
   margin-top: 40px;
+  margin-right: 32px;
   display: flex;
   justify-content: end;
+
+  @include tablet {
+    margin-top: 0;
+  }
 
   &__item {
     &:not(:last-of-type) {
       margin-right: 28px;
     }
   }
-}
-.social-list__icon {
-  width: 32px;
-  height: 32px;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: $social-icon-color;
+
+    @include transition(fill);
+
+    @include tablet {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .social-list__link:hover .social-list__icon,
+  .social-list__link:focus .social-list__icon {
+    fill: $brand-color;
+  }
 }
 .footer__contact {
   margin-top: 40px;
+  margin-right: 32px;
 
   @include font(12px, 700, 1.86);
   text-align: right;
 
   color: $prime-text-color;
+
+  @include tablet {
+    @include font(14px, 700, 1.86);
+  }
+
+  @include desktop {
+    @include font(16px, 700, 1.86);
+    @include let-spc(0.02em);
+  }
 
   &--light {
     color: $brand-color;
@@ -61,4 +125,14 @@
 
   color: $second-text-color;
   border-top: 1px solid #e1e1e1;
+
+  @include tablet {
+    width: 100vw;
+    @include font(14px, 700, 1.86);
+    @include let-spc(0.02em);
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
 }

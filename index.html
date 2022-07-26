@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Icecream</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +22,7 @@
           <svg class="company-logo"><use href="./images/icons.svg#icon-icecream-logo"></use></svg>
           icecream
         </a>
-        <button type="button" class="menu-btn btn">
+        <button type="button" class="menu-btn btn js-menu-open">
           <svg width="20px" height="12px">
             <use href="./images/icons.svg#icon-burger" class="menu-btn"></use>
           </svg>
@@ -41,9 +43,43 @@
           </svg>
         </button>
       </div>
+
+      <div class="popup-menu is-hidden">
+        <button type="button" class="popup-menu__close-btn js-menu-close">
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-close" class="close-btn__icon"></use>
+          </svg>
+        </button>
+        <button type="button" class="popup-menu__buy-btn">
+          Buy now
+          <svg width="8px" height="16px" class="popup-buy-btn__icon">
+            <use href="./images/icons.svg#icon-pointer"></use>
+          </svg>
+        </button>
+
+        <nav class="popup-menu__site-nav">
+          <ul class="popup-site-nav__list">
+            <li class="popup-site-nav__item">
+              <a href="#hero" class="popup-site-nav__link site-nav__link">Home</a>
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#advantages" class="popup-site-nav__link site-nav__link">About us</a>
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#about" class="popup-site-nav__link site-nav__link">How it's made?</a>
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#products" class="popup-site-nav__link site-nav__link">Our products</a>
+            </li>
+            <li class="popup-site-nav__item">
+              <a href="#contacts" class="popup-site-nav__link site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container hero__container">
           <div class="hero-wrapper">
             <h1 class="page-title">
@@ -77,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="products section">
+      <section class="products section" id="products">
         <div class="container">
           <p class="pre-title">100% natural</p>
           <h2 class="section-title products-title">products</h2>
@@ -108,7 +144,12 @@
                   media="(max-width:767.98px)"
                   type="image/apng"
                 />
-                <img src="./images/products/mobile/icecream.png" alt="strawberry icecream" />
+                <img
+                  class="lazyload"
+                  loading="lazy"
+                  data-src="./images/products/mobile/icecream.png"
+                  alt="strawberry icecream"
+                />
               </picture>
               <h3 class="product-card__title">ice cream</h3>
               <p class="product-card__descr">
@@ -147,7 +188,12 @@
                   media="(max-width:767.98px)"
                   type="image/apng"
                 />
-                <img src="./images/products/mobile/icecofee.png" alt="strawberry icecream" />
+                <img
+                  class="lazyload"
+                  loading="lazy"
+                  data-src="./images/products/mobile/icecofee.png"
+                  alt="strawberry icecream"
+                />
               </picture>
               <h3 class="product-card__title">ice cream</h3>
               <p class="product-card__descr">
@@ -186,7 +232,12 @@
                   media="(max-width:767.98px)"
                   type="image/apng"
                 />
-                <img src="./images/products/mobile/milkshake.png" alt="strawberry icecream" />
+                <img
+                  class="lazyload"
+                  loading="lazy"
+                  data-src="./images/products/mobile/milkshake.png"
+                  alt="strawberry icecream"
+                />
               </picture>
               <h3 class="product-card__title">ice cream</h3>
               <p class="product-card__descr">
@@ -202,7 +253,7 @@
           </ul>
         </div>
       </section>
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container">
           <p class="pre-title">tradition and love</p>
           <h2 class="section-title about-title">how it's made?</h2>
@@ -223,7 +274,12 @@
                 media="(max-width:767.98px)"
                 type="image/apng"
               />
-              <img src="./images/about/mobile/milk.png" alt="milk with cow" />
+              <img
+                class="lazyload"
+                loading="lazy"
+                data-src="./images/about/mobile/milk.png"
+                alt="milk with cow"
+              />
             </picture>
             <div class="about-description">
               <p class="about-description__text">
@@ -246,7 +302,7 @@
           </div>
         </div>
       </section>
-      <section class="section advantages">
+      <section class="section advantages" id="advantages">
         <div class="container advantages-container">
           <h2 class="section-title visually-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -300,7 +356,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-1-1x.jpg" alt="icecream with strawberries" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-1-1x.jpg"
+                  alt="icecream with strawberries"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -328,7 +389,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-2-1x.jpg" alt="mint icecream on wooden plate" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-2-1x.jpg"
+                  alt="mint icecream on wooden plate"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -356,7 +422,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-3-1x.jpg" alt="icecream in hand" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-3-1x.jpg"
+                  alt="icecream in hand"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -384,7 +455,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-4-1x.jpg" alt="a lot of icecreams laying" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-4-1x.jpg"
+                  alt="a lot of icecreams laying"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -412,7 +488,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-5-1x.jpg" alt="girl eating icecream" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-5-1x.jpg"
+                  alt="girl eating icecream"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -441,7 +522,9 @@
                   media="(max-width:767.98px)"
                 />
                 <img
-                  src="./images/gallery/gallery-6-1x.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-6-1x.jpg"
                   alt="two hands holding icecreams ot each other"
                 />
               </picture>
@@ -472,7 +555,9 @@
                   media="(max-width:767.98px)"
                 />
                 <img
-                  src="./images/gallery/gallery-7-1x.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-7-1x.jpg"
                   alt="hand holding icecream at street"
                 />
               </picture>
@@ -502,7 +587,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-8-1x.jpg" alt="dog licking icecream" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-8-1x.jpg"
+                  alt="dog licking icecream"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -530,7 +620,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-9-1x.jpg" alt="glass of milk with donut atop" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-9-1x.jpg"
+                  alt="glass of milk with donut atop"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -558,7 +653,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-10-1x.jpg" alt="little girl with icecream" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-10-1x.jpg"
+                  alt="little girl with icecream"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -587,7 +687,9 @@
                   media="(max-width:767.98px)"
                 />
                 <img
-                  src="./images/gallery/gallery-11-1x.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-11-1x.jpg"
                   alt="icecream with sky in background"
                 />
               </picture>
@@ -617,7 +719,12 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-12-1x.jpg" alt="icecream with bowl of berries" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-12-1x.jpg"
+                  alt="icecream with bowl of berries"
+                />
               </picture>
             </li>
             <li class="gallery-list__item">
@@ -645,16 +752,21 @@
                   type="image/jpeg"
                   media="(max-width:767.98px)"
                 />
-                <img src="./images/gallery/gallery-13-1x.jpg" alt="ice cofee" />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/gallery/gallery-13-1x.jpg"
+                  alt="ice cofee"
+                />
               </picture>
             </li>
           </ul>
         </div>
       </section>
       <section class="section reviews">
-        <div class="container">
-          <ul class="reviews-list">
-            <li class="reviews-list__item review">
+        <div class="container swiper mySwiper">
+          <ul class="reviews-list swiper-wrapper">
+            <li class="reviews-list__item review swiper-slide">
               <picture>
                 <source
                   srcset="./images/reviews/emily.webp 1x, ./images/reviews/emily@2x.webp 2x"
@@ -663,6 +775,8 @@
                   srcset="./images/reviews/emily.jpg 1x, ./images/reviews/emily@2x.jpeg 2x"
                   type="image/jpeg" />
                 <img
+                  class="lazyload"
+                  data-loading="lazy"
                   src="./images/reviews/emily.jpg"
                   alt="portrait of person giving review"
                   class="review__portrait"
@@ -676,7 +790,7 @@
               <svg class="review__icon"><use href="./images/icons.svg#icon-dots"></use></svg>
               <p class="review__name">Emily, Los Angeles</p>
             </li>
-            <li class="rewievs-list__item review">
+            <li class="rewievs-list__item review swiper-slide">
               <picture>
                 <source
                   srcset="./images/reviews/anna.webp 1x, ./images/reviews/anna@2x.webp 2x"
@@ -685,7 +799,8 @@
                   srcset="./images/reviews/anna.jpg 1x, ./images/reviews/anna@2x.jpeg 2x"
                   type="image/jpeg" />
                 <img
-                  src="./images/reviews/anna.jpg"
+                  loading="lazy"
+                  data-src="./images/reviews/anna.jpg"
                   alt="portrait of person giving review"
                   class="review__portrait"
               /></picture>
@@ -698,7 +813,7 @@
               <svg class="review__icon"><use href="./images/icons.svg#icon-dots"></use></svg>
               <p class="review__name">Anna, Chicago</p>
             </li>
-            <li class="rewievs-list__item review">
+            <li class="rewievs-list__item review swiper-slide">
               <picture>
                 <source
                   srcset="./images/reviews/alisha.webp 1x, ./images/reviews/alisha@2x.webp 2x"
@@ -707,7 +822,8 @@
                   srcset="./images/reviews/alisha.jpg 1x, ./images/reviews/alisha@2x.jpeg 2x"
                   type="image/jpeg" />
                 <img
-                  src="./images/reviews/alisha.jpg"
+                  loading="lazy"
+                  data-src="./images/reviews/alisha.jpg"
                   alt="portrait of person giving review"
                   class="review__portrait"
               /></picture>
@@ -721,10 +837,13 @@
               <p class="review__name">Alisha, New York</p>
             </li>
           </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="section locations">
-        <div class="container">
+      <section class="section locations" id="contacts">
+        <div class="container locations-container">
           <ul class="location-list">
             <li class="location-list__item restaurant">
               <p class="restaurant__label">Cafe</p>
@@ -801,28 +920,39 @@
           Homemade ice cream made
           <span class="footer__slogan--dark">with passion</span>
         </p>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <svg class="social-list__icon">
-              <use href="./images/icons.svg#icon-github"></use>
-            </svg>
-          </li>
-          <li class="social-list__item">
-            <svg class="social-list__icon">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </li>
-          <li class="social-list__item">
-            <svg class="social-list__icon">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </li>
-        </ul>
-        <p class="footer__contact">
-          Feel free to contact <span class="footer__contact--light">+61(0) 383 766 284</span>
-        </p>
+        <div class="footer-contacts-container">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="https://github.com" class="social-list__link"
+                ><svg class="social-list__icon">
+                  <use href="./images/icons.svg#icon-github"></use></svg
+              ></a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://telegram.org/" class="social-list__link"
+                ><svg class="social-list__icon">
+                  <use href="./images/icons.svg#icon-telegram"></use></svg
+              ></a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://facebook.com" class="social-list__link"
+                ><svg class="social-list__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__contact">
+            Feel free to contact
+            <a href="tel:+610383766284" class="footer__contact--light">+61(0) 383 766 284</a>
+          </p>
+        </div>
         <p class="footer__copyright">&copy; 2019 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script src="./js/swiper.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/lazy-loading.js" type="module"></script>
+    <script src="./js/popup-menu.js" type="module"></script>
   </body>
 </html>

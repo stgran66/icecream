@@ -1,5 +1,11 @@
 .locations {
   background-image: linear-gradient($light-color 24%, $section-first-bgcolor 24%);
+
+  &-container {
+    @include tablet {
+      padding-bottom: 40px;
+    }
+  }
 }
 
 .location-list {
