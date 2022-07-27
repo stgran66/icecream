@@ -9,7 +9,6 @@
   document.addEventListener(
     'scroll',
     _.throttle(() => {
-      console.log('hi');
       if (scrollContainer().scrollTop > showOnPx) {
         backToTopButton.classList.remove('hidden');
       } else {
