@@ -369,6 +369,39 @@ button {
   }
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 1000;
+  border: none;
+  opacity: 1;
+  transform: translate(0) scale(1) rotate(0);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-to-top:hover, .back-to-top:focus {
+  outline: none;
+}
+
+.back-to-top.hidden {
+  opacity: 0;
+  transform: translate(200px, 200px) scale(5) rotate(720deg);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.back-to-top__icon {
+  fill: #d41443;
+}
+
+.back-to-top:hover .back-to-top__icon,
+.back-to-top:focus .back-to-top__icon {
+  fill: #d41443;
+}
+
 .popup-menu {
   width: 250px;
   height: 100vh;
@@ -1495,7 +1528,8 @@ button {
   border-radius: 0;
   background-image: url("../images/reviews/swiper-icon.svg");
   background-color: transparent;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .locations {
